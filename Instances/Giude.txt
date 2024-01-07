@@ -1,0 +1,57 @@
+For each class, the parameters and the solution
+  of instance i are reported in data_i.txt and
+  sol_i.txt, respectively, in the associated folder.
+
+In cases the optimal solution was available and
+  phase 2 of the greedy algorithm applying on
+  the optimal sequence failed to reach the optimal
+  objective value, both the optimal objective value
+  and the objective value obtained by phase 2 was
+  reported in sol_i.txt.
+
+*****************
+Description of sol_i.txt:
+
+The first line: the sequence of the solution.
+  In the sequence, for each element x_y, x denotes the
+  coil and, y in {I, O, B} indicates the coil
+  status in the  sequence (Incoming, Outgoing, Blocking)
+
+The second line: the value of the objective function 
+
+*****************
+Description of data_i.txt:
+
+The first line containing 8 numbers are as follows:
+  The number of rows, the number of columns, The number of
+  cranes, the number of incoming coils, the number of
+  outgoing coils, the number of exit doors, the number of
+  types of coils, the number of coils.
+
+Next the H lines, where H denotes the number of exit doors
+  indicate the position of exit doors. Each line is as follows:
+  h	r	n
+  representing that the door h is located in (r,n).
+
+Next the M lines, where M denotes the number of cranes
+  indicate the initial position of cranes. Each line is as follows:
+  m	r	n
+  indicating that the crane m initially is located in (r,n).
+
+Next the T lines, where T denotes the number of types of
+  coils indicate the number of coils of each type needed 
+  for each exit door. Each line is as follows:
+  t	x_1	x_2 ... x_H
+  indicating that the door h needs x_h coils of type t.
+
+Next the C lines, where C denotes the number of coils,
+  indicate the initial position and the type of coils.
+  Each line is as follows:
+  c	r	n	t
+  indicating that the coil c is initially located
+  in (r,n) and its type is t. It is worth mentioning
+  that for the incoming coils the type is zero.
+
+
+  
+ 
